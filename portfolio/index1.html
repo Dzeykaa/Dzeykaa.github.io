@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VJMD</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-gradient">JAICA</span>
+                </h1>
+                <h2 class="hero-role">Full Stack Developer & Designer</h2>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                       I am a graduate of Carlos Hilado Memorial State University 
+                       with a Bachelor of Science in Information Systems. <br><br> I specialize 
+                       in understanding business processes and transforming business 
+                       problems into effective, technology-driven solutions. My strength 
+                       lies in analyzing how organizations work and tailoring systems that 
+                       align with their goals, improve efficiency, and support informed 
+                       decision-making. I am passionate about building solutions that bridge 
+                       the gap between business needs and technology.
+                    </p>
+                    <p class="about-details">
+                        After graduating, I have been working as a freelance developer, 
+                        gaining hands-on experience in building and customizing systems 
+                        for various clients. I have also ventured into using Photoshop, 
+                        Adobe Illustrator, and CorelDRAW to further enhance my front-end 
+                        design skills, allowing me to create solutions that are not only 
+                        functional but also visually engaging and user-friendly.
+                        <br><br>
+                        I am confident in my skills, as our latest project received a 
+                        very positive response from the client, who was satisfied with 
+                        the results and even referred us to other businesses. This experience 
+                        further strengthened my commitment to delivering quality solutions
+                         that create real value for clients.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">20+</span>
+                            <span class="highlight-label">Projects Completed</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">3+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">100%</span>
+                            <span class="highlight-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/p1.jpg" alt="Your Photo" class="profile-photo" style="max-width: 500px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects" style="padding: 50px 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+            <!-- Project Card 1 -->
+            <div class="project-card" data-images='["images/kargamoto/1.png","images/kargamoto/2.png","images/kargamoto/3.png"]' 
+                 style="border-radius: 15px; overflow: hidden; width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer;">
+                <div class="project-image" style="position: relative;">
+                    <img src="images/kargamoto/1.png" alt="Kargamoto website preview" style="width: 100%; display: block;">
+                </div>
+                <div class="project-content" style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px 0;">Kargamoto Website</h3>
+                    <p style="font-size: 0.9rem; color: #555;">
+                        A moto-taxi platform planned for launch in Negros Occidental. Developed the official website 
+                        that allows drivers to book appointments to apply as riders and serves as a platform for 
+                        displaying important details, announcements, and updates.
+                    </p>
+                    <div class="project-tech" style="margin-top: 10px;">
+                        <span style=" padding: 5px 10px; border-radius: 5px; margin-right: 5px;">React</span>
+                        <span style=" padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Node.js</span>
+                        <span style=" padding: 5px 10px; border-radius: 5px;">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card" data-images='["images/kargamoto/3.png","images/kargamoto/4.png"]' 
+                 style="background: #fff; border-radius: 15px; overflow: hidden; width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer;">
+                <div class="project-image" style="position: relative;">
+                    <img src="images/kargamoto/3.png" alt="Task app dashboard preview" style="width: 100%; display: block;">
+                </div>
+                <div class="project-content" style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px 0;">Task Management App</h3>
+                    <p style="font-size: 0.9rem; color: #555;">
+                        A collaborative workspace with real-time updates, drag-and-drop boards, and clear team visibility 
+                        so projects ship on time.
+                    </p>
+                    <div class="project-tech" style="margin-top: 10px;">
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Vue.js</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Express</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">PostgreSQL</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px;">Socket.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card" data-images='["images/kargamoto/5.png","images/kargamoto/6.png"]' 
+                 style="background: #fff; border-radius: 15px; overflow: hidden; width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); cursor: pointer;">
+                <div class="project-image" style="position: relative;">
+                    <img src="images/kargamoto/5.png" alt="Weather dashboard preview" style="width: 100%; display: block;">
+                </div>
+                <div class="project-content" style="padding: 20px;">
+                    <h3 style="margin: 0 0 10px 0;">Weather Dashboard</h3>
+                    <p style="font-size: 0.9rem; color: #555;">
+                        Location-based forecasts with clean charts, highlights at a glance, 
+                        and detailed views when you need deeper meteorological data.
+                    </p>
+                    <div class="project-tech" style="margin-top: 10px;">
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">JavaScript</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">API</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px; margin-right: 5px;">Chart.js</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 5px;">CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="project-lightbox" style="position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(10,10,25,0.95); display:none; justify-content:center; align-items:center; z-index:9999; overflow:hidden;">
+    <span class="close" style="position:absolute; top:20px; right:30px; font-size:3rem; color:#fff; cursor:pointer; z-index:1000;">&times;</span>
+    <div style="position: relative; max-width: 80%; max-height: 80%; overflow:hidden;">
+        <img id="lightbox-image" src="" 
+             style="width:100%; height:auto; border-radius:10px; box-shadow:0 0 40px rgba(0,0,0,0.7); position:absolute; transition: transform 0.5s ease, opacity 0.5s ease; opacity:1;">
+        <div style="position:absolute; top:50%; width:100%; display:flex; justify-content:space-between; transform:translateY(-50%); z-index:1000;">
+            <button id="prev" style="background:rgba(255,255,255,0.15); border:none; font-size:2rem; color:white; cursor:pointer; padding:10px 20px; border-radius:50%; transition: background 0.2s;">&#10094;</button>
+            <button id="next" style="background:rgba(255,255,255,0.15); border:none; font-size:2rem; color:white; cursor:pointer; padding:10px 20px; border-radius:50%; transition: background 0.2s;">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const projectCards = document.querySelectorAll(".project-card");
+const lightbox = document.getElementById("project-lightbox");
+const lightboxImg = document.getElementById("lightbox-image");
+const closeBtn = lightbox.querySelector(".close");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+let currentImages = [];
+let currentIndex = 0;
+let isAnimating = false;
+
+projectCards.forEach(card => {
+    card.addEventListener("click", () => {
+        currentImages = JSON.parse(card.dataset.images);
+        currentIndex = 0;
+        openLightbox();
+    });
+});
+
+function openLightbox() {
+    lightbox.style.display = "flex";
+    lightboxImg.style.opacity = 1;
+    lightboxImg.style.transform = "translateX(0)";
+    lightboxImg.src = currentImages[currentIndex];
+}
+
+function closeLightbox() {
+    lightbox.style.display = "none";
+}
+
+function showNext() {
+    if (isAnimating) return;
+    isAnimating = true;
+    lightboxImg.style.transform = "translateX(-100%)";
+    lightboxImg.style.opacity = 0;
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex];
+        lightboxImg.style.transform = "translateX(100%)";
+        lightboxImg.style.opacity = 0;
+        requestAnimationFrame(() => {
+            lightboxImg.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+            lightboxImg.style.transform = "translateX(0)";
+            lightboxImg.style.opacity = 1;
+        });
+        setTimeout(() => isAnimating = false, 500);
+    }, 500);
+}
+
+function showPrev() {
+    if (isAnimating) return;
+    isAnimating = true;
+    lightboxImg.style.transform = "translateX(100%)";
+    lightboxImg.style.opacity = 0;
+    setTimeout(() => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex];
+        lightboxImg.style.transform = "translateX(-100%)";
+        lightboxImg.style.opacity = 0;
+        requestAnimationFrame(() => {
+            lightboxImg.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+            lightboxImg.style.transform = "translateX(0)";
+            lightboxImg.style.opacity = 1;
+        });
+        setTimeout(() => isAnimating = false, 500);
+    }, 500);
+}
+
+closeBtn.addEventListener("click", closeLightbox);
+nextBtn.addEventListener("click", showNext);
+prevBtn.addEventListener("click", showPrev);
+
+lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", e => {
+    if (lightbox.style.display === "flex") {
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+        if (e.key === "Escape") closeLightbox();
+    }
+});
+</script>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Skills & Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Tailwind</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-percent">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-icons">
+                    <div class="icon-grid">
+                        <div class="icon-item" data-tooltip="HTML5">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-item" data-tooltip="CSS3">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-item" data-tooltip="JavaScript">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-item" data-tooltip="React">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-item" data-tooltip="Node.js">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                        <div class="icon-item" data-tooltip="Git">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 18l-8.5 5.3L1 16.1V7.9l2.5-1.6L12 6l8.5-1.7L23 7.9v8.2l-2.5 7.2L12 18zm0-2.2l6.2 3.9 1.3-3.8L12 9.5l-7.5 6.4 1.3 3.8L12 15.8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's work together</h3>
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:your.email@example.com" class="contact-value">your.email@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+1234567890" class="contact-value">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" aria-label="Dribbble">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built with <span class="heart">♥</span> by Your Name
+                </p>
+                <p class="footer-copyright">© 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Slideshow -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <span class="close" role="button" aria-label="Close presentation" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modal-content">
+            <img id="slide" src="" alt="Project slide" loading="lazy">
+            <div class="modal-caption" id="modal-caption"></div>
+            <div class="modal-dots" id="modal-dots"></div>
+            <button class="prev" aria-label="Previous slide" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" aria-label="Next slide" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const galleries = {
+            kargamoto: [
+                { src: 'images/kargamoto/1.png', caption: 'Homepage hero and brand positioning' },
+                { src: 'images/kargamoto/2.png', caption: 'Service overview and feature callouts' },
+                { src: 'images/kargamoto/3.png', caption: 'Driver application flow' },
+                { src: 'images/kargamoto/4.png', caption: 'Announcements and updates module' },
+                { src: 'images/kargamoto/5.png', caption: 'Responsive layout on tablet' },
+                { src: 'images/kargamoto/6.png', caption: 'Mobile-first booking section' },
+                { src: 'images/kargamoto/7.png', caption: 'CTA and conversion-focused footer' },
+                { src: 'images/kargamoto/8.png', caption: 'Palette and typography consistency' }
+            ],
+            taskapp: [
+                { src: 'images/kargamoto/2.png', caption: 'Team dashboard with task status' },
+                { src: 'images/kargamoto/3.png', caption: 'Kanban-style board interactions' },
+                { src: 'images/kargamoto/4.png', caption: 'Task detail and activity timeline' }
+            ],
+            weather: [
+                { src: 'images/kargamoto/5.png', caption: 'Regional overview with highlights' },
+                { src: 'images/kargamoto/6.png', caption: 'Hourly breakdown with clarity' },
+                { src: 'images/kargamoto/7.png', caption: 'Mobile-first forecast cards' }
+            ]
+        };
+
+        let currentGallery = 'kargamoto';
+        let currentSlide = 0;
+
+        function openModal(gallery = 'kargamoto', startIndex = 0) {
+            window.scrollTo(0, 0);
+            currentGallery = gallery;
+            currentSlide = startIndex;
+            const modal = document.getElementById('modal');
+            document.body.classList.add('modal-open');
+            buildDots();
+            showSlide(currentSlide, 'fade');
+            requestAnimationFrame(() => {
+                modal.style.display = 'flex';
+                modal.setAttribute('aria-hidden', 'false');
+                modal.classList.add('open');
+            });
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 200);
+        }
+
+        function changeSlide(step) {
+            const slides = galleries[currentGallery] || [];
+            if (!slides.length) return;
+            const direction = step > 0 ? 'right' : 'left';
+            currentSlide = (currentSlide + step + slides.length) % slides.length;
+            showSlide(currentSlide, direction);
+        }
+
+        function showSlide(index, direction = 'fade') {
+            const slides = galleries[currentGallery] || [];
+            if (!slides.length) return;
+
+            const slideData = slides[index];
+            const src = typeof slideData === 'string' ? slideData : slideData.src;
+            const caption = typeof slideData === 'object' ? slideData.caption : '';
+
+            const imgEl = document.getElementById('slide');
+            const captionEl = document.getElementById('modal-caption');
+
+            imgEl.classList.remove('slide-left', 'slide-right', 'fade');
+            void imgEl.offsetWidth; // restart animation
+            imgEl.src = src;
+            imgEl.classList.add(direction === 'left' ? 'slide-left' : direction === 'right' ? 'slide-right' : 'fade');
+            captionEl.textContent = caption || '';
+
+            updateDots();
+        }
+
+        // Progress dots for modal
+        function buildDots() {
+            const slides = galleries[currentGallery] || [];
+            const dotsContainer = document.getElementById('modal-dots');
+            dotsContainer.innerHTML = '';
+            slides.forEach((_, idx) => {
+                const dot = document.createElement('span');
+                dot.className = 'modal-dot';
+                if (idx === currentSlide) dot.classList.add('active');
+                dot.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    currentSlide = idx;
+                    showSlide(currentSlide, 'fade');
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateDots() {
+            const dots = document.querySelectorAll('#modal-dots .modal-dot');
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentSlide);
+            });
+        }
+
+        // Attach click handlers to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const galleryName = card.getAttribute('data-gallery') || 'kargamoto';
+                const startIndex = parseInt(card.getAttribute('data-start') || '0', 10);
+                const slides = galleries[galleryName] || [];
+
+                if (!slides.length) {
+                    showNotification('Images for this project are coming soon.', 'info');
+                    return;
+                }
+
+                openModal(galleryName, startIndex);
+            });
+        });
+
+        // Inline slider per project card (keeps layout, adds subtle navigation)
+        function setupProjectSliders() {
+            const cards = document.querySelectorAll('.project-card[data-gallery]');
+            cards.forEach(card => {
+                const galleryName = card.getAttribute('data-gallery');
+                const slides = galleries[galleryName] || [];
+                if (!slides.length) return;
+
+                const resolveSrc = (slide) => typeof slide === 'object' ? slide.src : slide;
+
+                const imageEl = card.querySelector('.project-thumb');
+                if (!imageEl) return;
+
+                imageEl.loading = 'lazy';
+                let current = 0;
+                imageEl.src = resolveSrc(slides[current]);
+
+                const imageWrapper = card.querySelector('.project-image');
+                if (!imageWrapper) return;
+
+                const controls = document.createElement('div');
+                controls.className = 'project-slider-controls';
+
+                const prevBtn = document.createElement('button');
+                prevBtn.type = 'button';
+                prevBtn.className = 'project-arrow project-prev';
+                prevBtn.innerHTML = '&#10094;';
+
+                const nextBtn = document.createElement('button');
+                nextBtn.type = 'button';
+                nextBtn.className = 'project-arrow project-next';
+                nextBtn.innerHTML = '&#10095;';
+
+                const dots = document.createElement('div');
+                dots.className = 'project-dots';
+
+                slides.forEach((_, idx) => {
+                    const dot = document.createElement('span');
+                    dot.className = 'project-dot';
+                    if (idx === 0) dot.classList.add('active');
+                    dot.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        goTo(idx);
+                    });
+                    dots.appendChild(dot);
+                });
+
+                function updateDots() {
+                    dots.querySelectorAll('.project-dot').forEach((dot, idx) => {
+                        dot.classList.toggle('active', idx === current);
+                    });
+                }
+
+                function goTo(idx) {
+                    current = (idx + slides.length) % slides.length;
+                    imageEl.src = resolveSrc(slides[current]);
+                    updateDots();
+                }
+
+                prevBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    goTo(current - 1);
+                });
+
+                nextBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    goTo(current + 1);
+                });
+
+                // Touch swipe for mobile
+                let touchStartX = 0;
+                imageWrapper.addEventListener('touchstart', (e) => {
+                    touchStartX = e.touches[0].clientX;
+                });
+                imageWrapper.addEventListener('touchend', (e) => {
+                    const deltaX = e.changedTouches[0].clientX - touchStartX;
+                    if (Math.abs(deltaX) > 40) {
+                        if (deltaX > 0) {
+                            goTo(current - 1);
+                        } else {
+                            goTo(current + 1);
+                        }
+                    }
+                });
+
+                controls.appendChild(prevBtn);
+                controls.appendChild(nextBtn);
+                imageWrapper.appendChild(controls);
+                imageWrapper.appendChild(dots);
+            });
+        }
+
+        window.addEventListener('load', () => {
+            setupProjectSliders();
+        });
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('modal')) {
+                closeModal();
+            }
+        }
+
+        // Keyboard navigation for modal
+        window.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('modal');
+            const isOpen = modal.classList.contains('open');
+            if (!isOpen) return;
+            if (e.key === 'ArrowRight') {
+                changeSlide(1);
+            } else if (e.key === 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Swipe gestures for modal
+        (() => {
+            const modalContent = document.getElementById('modal-content');
+            let startX = 0;
+            modalContent.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            });
+            modalContent.addEventListener('touchend', (e) => {
+                const deltaX = e.changedTouches[0].clientX - startX;
+                if (Math.abs(deltaX) > 40) {
+                    if (deltaX > 0) changeSlide(-1);
+                    else changeSlide(1);
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+
